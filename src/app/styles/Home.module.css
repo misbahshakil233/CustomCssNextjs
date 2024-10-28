@@ -1,0 +1,126 @@
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+.circularBackground {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(255, 0, 150, 0.5), rgba(0, 204, 255, 0.3));
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.heroCard {
+    display: flex;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    border: 10px solid;
+    animation: borderAnimation 5s linear infinite;
+    z-index: 1;
+    box-shadow: 0 0 15px ;
+    height: 75vh; /* Adjusted height */
+    width: 80%; /* Adjusted width */
+}
+
+@keyframes borderAnimation {
+    0% {
+        border-color: red;
+    }
+    25% {
+        border-color: yellow;
+    }
+    50% {
+        border-color: green;
+    }
+    75% {
+        border-color: blue;
+    }
+    100% {
+        border-color: red;
+    }
+}
+
+.leftContent {
+    flex: 1; /* Flex property to occupy equal space */
+    padding: 20px;
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center content vertically */
+}
+
+.headingLarge {
+    font-size: 56px; /* Increased font size for H1 */
+    margin: 0;
+    padding: 10px 0;
+}
+
+.headingSmall {
+    font-size: 34px; /* Increased font size for H3 */
+    margin: 0;
+    padding: 10px 0;
+}
+
+.content {
+    font-size: 20px; /* Font size for the content paragraph */
+    margin: 10px 0;
+}
+
+.rightImage {
+    flex: 1; /* Flex property to occupy equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   font-size: larger;
+}
+
+.rightImage img {
+    width: 100%; /* Maintain responsive width */
+    max-width: 400px; /* Increase max width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px;
+   
+}
+
+
+.button {
+    background: linear-gradient(45deg, #ff69b4, #ff1493); /* Gradient background */
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    height: 50px;
+    width: 30%;
+    margin-top: 30px;
+    font-size: 18px;
+
+}
+
+.button:hover {
+    opacity: 0.9; /* Slight hover effect */
+}

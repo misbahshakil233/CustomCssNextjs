@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+.background {
+    background: black;
+    background-image: radial-gradient(circle, rgba(255,0,0,0.5) 1%, transparent 50%);
+    background-size: 100px 100px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: darkred;
+}

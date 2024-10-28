@@ -1,0 +1,68 @@
+/* src/app/styles/Contact.module.css */
+.contactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh; /* Full viewport height */
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer {
+  flex: 1;
+  padding: 20px;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;    border-top-left-radius: 50px;
+    width: 100%;
+  max-width: 600px; /* Max width for image container */
+ 
+}
+
+.image {
+  border-bottom-right-radius: 50px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 100%; /* Ensure it takes full width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure the image covers the container */
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formLabel {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formInput,
+.formTextarea {
+  width: 60%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.formTextarea{
+  height: 30vh;
+}
+
+.submitButton {
+  padding: 10px 20px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: #005bb5;
+}

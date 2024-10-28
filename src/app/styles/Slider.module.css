@@ -1,0 +1,64 @@
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageWrapper {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .imageCaption {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .navButton {
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #0070f3;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    transition: color 0.3s;
+  }
+  
+  .navButton:hover {
+    color: #005bb5;
+  }
+  
+  .navButton:first-child {
+    left: 10px;
+  }
+  
+  .navButton:last-child {
+    right: 10px;
+  }
+  
