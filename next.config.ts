@@ -7,7 +7,8 @@ const nextConfig: NextConfig = {
       'example.com', 
       'freedesignfile.com', 
       'i.dailymail.co.uk',
-      'th.bing.com' // Add the new external image domain here
+      'th.bing.com', 
+      'static.vecteezy.com' // Add the new external image domain here
     ],
   },
 };
