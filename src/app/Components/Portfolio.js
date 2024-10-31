@@ -1,3 +1,5 @@
+// components/Portfolio.js
+import Image from 'next/image';
 import styles from '../styles/Portfolio.module.css';
 
 const projects = [
@@ -46,7 +48,14 @@ export default function Portfolio() {
       <div className={styles.projects}>
         {projects.map((project, index) => (
           <div key={index} className={styles.projectCard}>
-            <img src={project.image} alt={project.title} className={styles.projectImage} />
+            <Image
+              src={project.image}
+              alt={project.title}
+              className={styles.projectImage}
+              width={300} // Adjust width based on design
+              height={200} // Adjust height based on design
+              layout="responsive"
+            />
             <h2 className={styles.projectTitle}>{project.title}</h2>
             <p className={styles.projectDescription}>{project.description}</p>
             <a href={project.link} target="_blank" rel="noopener noreferrer" className={styles.projectLink}>
