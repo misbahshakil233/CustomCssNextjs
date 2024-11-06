@@ -34,7 +34,7 @@ const Hero = () => {
                             Contact Me
                         </button>
                         <button className={styles.button} onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
-                            Contact Me
+                           Download CV
                         </button>
                     </div>
                 </div>
